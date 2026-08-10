@@ -1,0 +1,34 @@
+{
+  "小说列表" : {
+    "transaction" : "小说列表",
+    "sampleCount" : 115294,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 19.24225024719443,
+    "medianResTime" : 15.0,
+    "minResTime" : 5.0,
+    "maxResTime" : 573.0,
+    "pct1ResTime" : 29.0,
+    "pct2ResTime" : 34.0,
+    "pct3ResTime" : 46.0,
+    "throughput" : 480.3456335434521,
+    "receivedKBytesPerSec" : 1761.4214681054004,
+    "sentKBytesPerSec" : 0.0
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 115294,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 19.24225024719443,
+    "medianResTime" : 15.0,
+    "minResTime" : 5.0,
+    "maxResTime" : 573.0,
+    "pct1ResTime" : 29.0,
+    "pct2ResTime" : 34.0,
+    "pct3ResTime" : 46.0,
+    "throughput" : 480.3456335434521,
+    "receivedKBytesPerSec" : 1761.4214681054004,
+    "sentKBytesPerSec" : 0.0
+  }
+}

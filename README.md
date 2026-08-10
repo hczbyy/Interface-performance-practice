@@ -21,6 +21,7 @@ Interface-performance-practice/
 ├── 服务器搭建环境.docx    # 服务器环境搭建说明
 ├── 问题排除.doc           # 测试过程中的问题排查记录
 ├── 小说系统搭建/          # 被测小说系统源码（Flask + MySQL）
+├── 性能测试jmeter脚本/    # JMeter 性能测试脚本与测试报告
 └── README.md              # 本文件
 ```
 
@@ -41,3 +42,20 @@ python run.py          # 启动服务，默认监听 0.0.0.0:5000
 测试账号：`test_001` ~ `test_050`，密码均为 `123456`。
 
 完整的 API 接口说明见 `小说系统搭建/novel-platform/README.md`。
+
+## 性能测试jmeter脚本
+
+JMeter 性能测试工程，包含三种测试脚本与对应的 HTML 测试报告：
+
+```text
+性能测试jmeter脚本/
+├── Linux.jmx              # Linux 环境性能测试脚本
+├── window_waitress.jmx    # Windows 环境（waitress）测试脚本
+├── Test Plan.jmx          # 测试计划总览
+├── 业务流程/              # 业务场景测试报告
+├── report定时器查看图书列接口/    # 吞吐量常量定时器恒压测试报告
+├── report阶梯压测查看图书列接口/  # 阶梯线程组压测（读接口）报告
+└── report阶梯压测写评论/          # 阶梯线程组压测（写接口）报告
+```
+
+报告文件夹为 JMeter HTML Dashboard 输出，直接用浏览器打开其中的 `index.html` 即可查看压测结果（TPS、响应时间、错误率等）。测试脚本覆盖读类接口（查看图书列表）与写类接口（写评论）场景。
